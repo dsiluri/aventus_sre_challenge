@@ -12,11 +12,5 @@ postgres:
   postgresPassword: password
   postgresDatabase: aventus
 
-pgadmin:
-  image:
-    repository: dpage/pgadmin4
-    tag: latest
-  email: d.siluri@pm.me
-  password: password123
-replicaCount: 1
-
+ingressHost: minikube.localhost
+    

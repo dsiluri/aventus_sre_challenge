@@ -1,0 +1,22 @@
+backend:
+  image:
+    repository: galactica/aventus_sre_challenge
+    tag: latest
+  port: 8080
+
+postgres:
+  image:
+    repository: postgres
+    tag: latest
+  postgresUser: postgres
+  postgresPassword: password
+  postgresDatabase: aventus
+
+pgadmin:
+  image:
+    repository: dpage/pgadmin4
+    tag: latest
+  email: d.siluri@pm.me
+  password: password123
+replicaCount: 1
+

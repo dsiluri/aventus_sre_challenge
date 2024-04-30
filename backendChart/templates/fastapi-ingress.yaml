@@ -4,7 +4,7 @@ metadata:
   name: fastapi-ingress
 spec:
   rules:
-    - host: minikube.localhost
+    - host: {{ .Values.ingressHost }}
       http:
         paths:
           - path: /populate
